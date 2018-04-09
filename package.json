@@ -1,0 +1,28 @@
+{
+  "name": "typed-event-bus",
+  "version": "1.0.1",
+  "description": "Strongly typed Event Bus to communicate between components",
+  "main": "webpack.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^2.2.48",
+    "chai": "^4.1.2",
+    "clean-webpack-plugin": "^0.1.19",
+    "mocha": "^5.0.4",
+    "ts-loader": "^4.0.1",
+    "ts-node": "^5.0.1",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11",
+    "webpack-merge": "^4.1.2"
+  },
+  "scripts": {
+    "build": "webpack --mode development --config webpack.config.dev.js",
+    "build:prod": "webpack --mode production --optimize-minimize --config webpack.config.prod.js",
+    "test": "mocha -r ts-node/register tests/**/*.specs.ts"
+  },
+  "author": "Victor Mingueza <victormingueza@gmail.com>",
+  "license": "MIT"
+}
