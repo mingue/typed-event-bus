@@ -3,7 +3,9 @@
         "sourceMap": true,
         "module": "commonjs",
         "target": "es5",
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "declaration": true,
+        "outDir": "dist"
     },
     "include": [
         "./src/**/*.tsx",
